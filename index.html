@@ -1,128 +1,43 @@
-<!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Olaniyi's Website </title>
-  <link rel="stylesheet" href="css/styles.css">
-  <!-- Load an icon library -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Registration form with Log in page.</title>
 </head>
-
 <body>
-  <div class="navbar">
-    <a class="active" href="index.html"><i class="fa fa-fw fa-home"></i>About me</a>
-    <a href="login.html"><i class="fa fa-fw fa-user"></i> Login</a>
-    <a href="registration.html"><i class="fa fa-fw fa-user"></i>Register</a>
-    <a href="contact.html"><i class="fa fa-fw fa-envelope"></i> Contact</a>
-
+  <form>
+    <label>First Name</label><br>
+      <input type="text" name="First Name"><br>
+    <label>Last Name</label><br>
+      <input type="text" name="Last Name"><br>
+    <label>Phone Number</label><br>
+      <input type="number" name="Phone Number"><br>
+    <label>Email Add</label><br>
+      <input type="text" name="Email Address"><br>
+    <label>Gender</label><br>
+      <input type="radio" name="Gender" id= male>
+      <label for= Male>Male</label>
+      <input type="radio" name="Gender" id= Female>
+      <label for= Female>Female</label>
+      <input type="radio" name="Gender" id= Other>
+      <label for= Other>Other</label><br>
+    <label>Date of Birth</label><br>
+      <input type="date" name="Date of Birth"><br>
+    <label>Favourite Color</label>
+      <input type="color" name="color"><br>
+    <input type="submit" value="submit">
+  </form>
+  <div class="Log In"><br><br>
+    <h3> I already have an account</h3>
+    <form action="/success_page.php">
+      <label>Email</label>
+      <input type="text" id="email"><br>
+      <label>Password</label>
+      <input type="text" id="passowrd"><br><br>
+      <input type="submit" value="Log In">
+    </form>
   </div>
-
-  <table cellspacing="20">
-    <tr>
-      <td><img class="circular" src="img/IMG_20160125_092851.jpg" width="180" height="200" alt="Oke Olaniyi A"></td>
-
-      <td>
-        <h1>Oke Olaniyi</h1>
-        <p><em>Network/Sys Admin.</em> at <strong><a href="sifmis.osunstate.gov.ng" target="_blank">State integration &
-              Financial Mangement Information System (SIFMIS) Office</a></strong></p>
-        <p> I am Oke Olaniyi. I’m a Network & System Administrator with a government agency. I’m an aspiring Front- end
-          developer with Zuri at the moment. .</p>
-      </td>
-    </tr>
-
-  </table>
-
-
-  <hr>
-  <h3>Hobbies</h3>
-  <ul>
-    <li>Reading</li>
-    <li>Trading(Financial market)</li>
-    <li>Charting</li>
-  </ul>
-  <hr>
-  <h3>Projects</h3>
-  <table cellspacing="10">
-    <thead>
-      <tr>
-        <th>Dates</th>
-        <th>Work</th>
-        <th>Projects</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>2019-2020</td>
-        <td>Facility Manager, Airtel Data Village</td>
-        <td>Managed the Data Village for Airtel, as part of their community social responsibility.</td>
-      </tr>
-      <tr>
-        <td>2021-Present</td>
-        <td>Network Engineer for SIFMIS project.</td>
-        <td>Formed part of the team that deployed the Sifmis network and workframe</td>
-        <td>Responsible for managing the network infrastructure at the SIFMIS office</td>
-      </tr>
-
-    </tbody>
-  </table>
-  <hr>
-  <h3>Skills</h3>
-  <table cellspacing="10">
-    <tr>
-
-      <td>
-        <table>
-          <tr>
-            <td>Internet Networking</td>
-            <td>⭐⭐⭐⭐⭐</td>
-          </tr>
-          <tr>
-            <td>Network troubleshooting</td>
-            <td>⭐⭐⭐⭐⭐</td>
-          </tr>
-          <tr>
-            <td>Microsoft Office Suite</td>
-            <td>⭐⭐⭐⭐</td>
-
-          </tr>
-        </table>
-      </td>
-      <td>
-        <table>
-          <tr>
-            <td>System troubleshooting</td>
-            <td>⭐⭐⭐⭐⭐</td>
-
-          </tr>
-          <tr>
-            <td>Network cabling and deployment</td>
-            <td>⭐⭐⭐⭐⭐</td>
-          </tr>
-          <tr>
-            <td>IT Support Fundamentals</td>
-            <td>⭐⭐⭐⭐</td>
-          </tr>
-        </table>
-      </td>
-    </tr>
-
-  </table>
-  <footer>
-    <nav>
-      <p>
-        <a href="index.html"><i class="fa fa-fw fa-home"></i>About me</a>
-        <a href="login.html"><i class="fa fa-fw fa-user"></i> Login</a>
-        <a href="registration.html"><i class="fa fa-fw fa-user"></i>Register</a>
-        <a href="contact.html"><i class="fa fa-fw fa-envelope"></i> Contact</a>
-      </p>
-    </nav>
-    <p>
-      All rights reserved. OkeOlaniyi 2002.
-    </p>
-  </footer>
-
+  
 </body>
-
 </html>
